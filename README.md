@@ -1,50 +1,226 @@
-# LinkedIn Skill for OpenClaw
+<!-- Improved compatibility of back to top link -->
+<a id="readme-top"></a>
 
-Manage LinkedIn profiles, post content, and engage with your network using browser automation in OpenClaw.
+<!--
+*** Thanks for checking out the LinkedIn Skill for OpenClaw.
+*** If you have a suggestion that would make this better, please fork the repo
+*** and create a pull request or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-## Overview
 
-This skill provides OpenClaw agents with the ability to:
-- View and edit LinkedIn profiles
-- Create and publish posts
-- Engage with content (likes, comments, shares)
-- Optimize profiles for professional branding
 
-## Installation
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-This skill is included in OpenClaw by default. To use it:
 
-1. Ensure you have browser access configured
-2. Navigate to LinkedIn and log in
-3. Use the browser tool to interact with LinkedIn
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://codeberg.org/tylerdotai/linkedin-skill">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
+  <h3 align="center">LinkedIn Skill for OpenClaw</h3>
+
+  <p align="center">
+    Manage LinkedIn profiles, post content, and engage with your network via browser automation in OpenClaw.
+    <br />
+    <a href="https://codeberg.org/tylerdotai/linkedin-skill"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://codeberg.org/tylerdotai/linkedin-skill">View Demo</a>
+    &middot;
+    <a href="https://codeberg.org/tylerdotai/linkedin-skill/issues">Report Bug</a>
+    &middot;
+    <a href="https://codeberg.org/tylerdotai/linkedin-skill/issues">Request Feature</a>
+  </p>
+</div>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#features">Features</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+This OpenClaw skill enables AI agents to manage LinkedIn profiles and content through browser automation. Perfect for professionals who want their AI assistants to help maintain their LinkedIn presence.
+
+### Features
+
+- **Profile Management**: View and edit headline, About section, experience, and skills
+- **Content Creation**: Create and publish posts to your LinkedIn feed
+- **Engagement**: Like, comment, and share posts from your network
+- **Professional Branding**: Optimize your profile for your career goals
+- **Browser Automation**: Uses OpenClaw's browser tool for all interactions
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+Follow these steps to install and use the LinkedIn skill in your OpenClaw setup.
+
+### Prerequisites
+
+- OpenClaw with browser tool enabled
+- LinkedIn account (logged in manually via browser)
+- For posting: active LinkedIn account
+
+### Installation
+
+#### Option 1: Clone to OpenClaw Skills
+
+1. Clone this repository to your OpenClaw skills folder:
+   ```sh
+   git clone git@codeberg.org:tylerdotai/linkedin-skill.git ~/.openclaw/skills/linkedin
+   ```
+
+2. Restart OpenClaw to load the new skill
+
+#### Option 2: Use Directly
+
+The skill is automatically available if you have browser access enabled. Just start using LinkedIn in your conversations.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
 ## Usage
 
-```markdown
-Open my LinkedIn profile and update my headline to "IT Professional | AI Enthusiast"
+Here are some examples of how to use this skill in your OpenClaw conversations:
+
+### Profile Updates
+```
+Update my LinkedIn headline to "IT Professional | AI Enthusiast"
 ```
 
-```markdown
+```
+Add "Python" and "Automation" to my LinkedIn skills
+```
+
+### Content Creation
+```
 Create a post on LinkedIn about my new project launch
 ```
 
-## Requirements
+```
+Post an update about learning a new technology
+```
 
-- OpenClaw with browser tool enabled
-- LinkedIn account (logged in via browser)
-- For posting: active LinkedIn account
+### Engagement
+```
+Like and comment on the last 3 posts in my LinkedIn feed
+```
 
-## Documentation
+_For more examples, please refer to the [SKILL.md](./SKILL.md)_
 
-See [SKILL.md](./SKILL.md) for detailed usage guidelines.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [x] Profile viewing and editing
+- [x] Post creation and publishing
+- [x] Engagement (likes, comments)
+- [ ] Add scheduled posting
+- [ ] Support LinkedIn Premium features
+- [ ] Multi-account support
+- [ ] Integration with OpenAI/Claude for post suggestions
+
+See the [open issues](https://codeberg.org/tylerdotai/linkedin-skill/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- CONTRIBUTING -->
 ## Contributing
 
-This skill is part of the OpenClaw skill ecosystem. To contribute:
-1. Fork this repo
-2. Make improvements
-3. Submit a PR or share with the community
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### Top contributors:
+
+<a href="https://codeberg.org/tylerdotai/linkedin-skill">
+  <img src="https://contrib.rocks/image?repo=tylerdotai/linkedin-skill" alt="contrib.rocks image" />
+</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- LICENSE -->
 ## License
 
-MIT License - feel free to use and modify for your own agents.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Tyler Delano - [@tylerdotai](https://twitter.com/tylerdotai) - tyler.delano@icloud.com
+
+Project Link: [https://codeberg.org/tylerdotai/linkedin-skill](https://codeberg.org/tylerdotai/linkedin-skill)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[contributors-shield]: https://img.shields.io/codeberg/contributors/tylerdotai/linkedin-skill?style=for-the-badge
+[contributors-url]: https://codeberg.org/tylerdotai/linkedin-skill
+[forks-shield]: https://img.shields.io/codeberg/forks/tylerdotai/linkedin-skill?style=for-the-badge
+[forks-url]: https://codeberg.org/tylerdotai/linkedin-skill
+[stars-shield]: https://img.shields.io/codeberg/stars/tylerdotai/linkedin-skill?style=for-the-badge
+[stars-url]: https://codeberg.org/tylerdotai/linkedin-skill
+[issues-shield]: https://img.shields.io/codeberg/issues/tylerdotai/linkedin-skill?style=for-the-badge
+[issues-url]: https://codeberg.org/tylerdotai/linkedin-skill/issues
+[license-shield]: https://img.shields.io/codeberg/l/tylerdotai/linkedin-skill?style=for-the-badge
+[license-url]: https://codeberg.org/tylerdotai/linkedin-skill/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/tyler-delano-60a35b1b1
