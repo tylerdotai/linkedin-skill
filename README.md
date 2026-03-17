@@ -195,7 +195,7 @@ Tyler Delano - [@tylerdotai](https://twitter.com/tylerdotai) - tyler.delano@iclo
 
 Project Link: [https://codeberg.org/tylerdotai/linkedin-skill](https://codeberg.org/tylerdotai/linkedin-skill)
 
-LinkedIn: [https://www.linkedin.com/in/tyler-delano](https://www.linkedin.com/in/tyler-delano)
+LinkedIn: [https://www.linkedin.com/in/tyler-delano-](https://www.linkedin.com/in/tyler-delano-)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
