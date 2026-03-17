@@ -12,12 +12,8 @@
 
 
 <!-- PROJECT SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-FF6B6B?style=for-the-badge&logo=openclaw&logoColor=white)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](#license)
 
 
 <!-- PROJECT LOGO -->
@@ -35,8 +31,6 @@
     <a href="https://codeberg.org/tylerdotai/linkedin-skill"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://codeberg.org/tylerdotai/linkedin-skill">View Demo</a>
-    &middot;
     <a href="https://codeberg.org/tylerdotai/linkedin-skill/issues">Report Bug</a>
     &middot;
     <a href="https://codeberg.org/tylerdotai/linkedin-skill/issues">Request Feature</a>
@@ -181,12 +175,6 @@ Contributions are what make the open source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-### Top contributors:
-
-<a href="https://codeberg.org/tylerdotai/linkedin-skill">
-  <img src="https://contrib.rocks/image?repo=tylerdotai/linkedin-skill" alt="contrib.rocks image" />
-</a>
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -196,7 +184,7 @@ Contributions are what make the open source community such an amazing place to l
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -211,16 +199,4 @@ Project Link: [https://codeberg.org/tylerdotai/linkedin-skill](https://codeberg.
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/codeberg/contributors/tylerdotai/linkedin-skill?style=for-the-badge
-[contributors-url]: https://codeberg.org/tylerdotai/linkedin-skill
-[forks-shield]: https://img.shields.io/codeberg/forks/tylerdotai/linkedin-skill?style=for-the-badge
-[forks-url]: https://codeberg.org/tylerdotai/linkedin-skill
-[stars-shield]: https://img.shields.io/codeberg/stars/tylerdotai/linkedin-skill?style=for-the-badge
-[stars-url]: https://codeberg.org/tylerdotai/linkedin-skill
-[issues-shield]: https://img.shields.io/codeberg/issues/tylerdotai/linkedin-skill?style=for-the-badge
-[issues-url]: https://codeberg.org/tylerdotai/linkedin-skill/issues
-[license-shield]: https://img.shields.io/codeberg/l/tylerdotai/linkedin-skill?style=for-the-badge
-[license-url]: https://codeberg.org/tylerdotai/linkedin-skill/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/tyler-delano-60a35b1b1
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
