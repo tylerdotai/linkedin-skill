@@ -19,7 +19,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://codeberg.org/tylerdotai/linkedin-skill">
+  <a href="https://github.com/tylerdotai/linkedin-skill">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -28,12 +28,12 @@
   <p align="center">
     Manage LinkedIn profiles, post content, and engage with your network via browser automation in OpenClaw.
     <br />
-    <a href="https://codeberg.org/tylerdotai/linkedin-skill"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/tylerdotai/linkedin-skill"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://codeberg.org/tylerdotai/linkedin-skill/issues">Report Bug</a>
+    <a href="https://github.com/tylerdotai/linkedin-skill/issues">Report Bug</a>
     &middot;
-    <a href="https://codeberg.org/tylerdotai/linkedin-skill/issues">Request Feature</a>
+    <a href="https://github.com/tylerdotai/linkedin-skill/issues">Request Feature</a>
   </p>
 </div>
 
@@ -100,7 +100,7 @@ Follow these steps to install and use the LinkedIn skill in your OpenClaw setup.
 
 1. Clone this repository to your OpenClaw skills folder:
    ```sh
-   git clone git@codeberg.org:tylerdotai/linkedin-skill.git ~/.openclaw/skills/linkedin
+   git clone git@github.com:tylerdotai/linkedin-skill.git ~/.openclaw/skills/linkedin
    ```
 
 2. Restart OpenClaw to load the new skill
@@ -158,7 +158,7 @@ _For more examples, please refer to the [SKILL.md](./SKILL.md)_
 - [ ] Multi-account support
 - [ ] Integration with OpenAI/Claude for post suggestions
 
-See the [open issues](https://codeberg.org/tylerdotai/linkedin-skill/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/tylerdotai/linkedin-skill/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,7 +193,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Tyler Delano - [@tylerdotai](https://twitter.com/tylerdotai) - tyler.delano@icloud.com
 
-Project Link: [https://codeberg.org/tylerdotai/linkedin-skill](https://codeberg.org/tylerdotai/linkedin-skill)
+Project Link: [https://github.com/tylerdotai/linkedin-skill](https://github.com/tylerdotai/linkedin-skill)
 
 LinkedIn: [https://www.linkedin.com/in/tylerpdelano](https://www.linkedin.com/in/tylerpdelano)
 
