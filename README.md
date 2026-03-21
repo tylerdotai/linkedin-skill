@@ -1,204 +1,72 @@
-<!-- Improved compatibility of back to top link -->
-<a id="readme-top"></a>
+# LinkedIn Skill for OpenClaw
 
-<!--
-*** Thanks for checking out the LinkedIn Skill for OpenClaw.
-*** If you have a suggestion that would make this better, please fork the repo
-*** and create a pull request or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
+<p align="center">
+  <img src="images/logo.png" alt="LinkedIn Skill logo" width="96" />
+</p>
 
+> An OpenClaw skill that guides browser-based LinkedIn profile management, posting, and engagement workflows.
 
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-skill-ff6b6b)](#about)
+[![Requires](https://img.shields.io/badge/Requires-browser-blue)](#requirements)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.txt)
 
-<!-- PROJECT SHIELDS -->
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-FF6B6B?style=for-the-badge&logo=openclaw&logoColor=white)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](#license)
+## About
 
+This repo packages a single OpenClaw skill definition for LinkedIn use cases. The actual capability lives in `SKILL.md`, which tells OpenClaw to use the `browser` tool for profile edits, content publishing, and feed engagement.
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/tylerdotai/linkedin-skill">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+## What Is In This Repo
 
-  <h3 align="center">LinkedIn Skill for OpenClaw</h3>
+| Path | Purpose |
+|------|---------|
+| `SKILL.md` | Skill metadata, allowed tools, and usage guidance |
+| `images/logo.png` | Skill logo |
+| `README.md` | Repository overview |
 
-  <p align="center">
-    Manage LinkedIn profiles, post content, and engage with your network via browser automation in OpenClaw.
-    <br />
-    <a href="https://github.com/tylerdotai/linkedin-skill"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/tylerdotai/linkedin-skill/issues">Report Bug</a>
-    &middot;
-    <a href="https://github.com/tylerdotai/linkedin-skill/issues">Request Feature</a>
-  </p>
-</div>
+## Requirements
 
+| Requirement | Details |
+|------------|---------|
+| Host app | OpenClaw |
+| Required tool | `browser` |
+| Account | A LinkedIn account with an active logged-in browser session |
 
+## Supported Workflows
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#features">Features</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
+- View and update profile sections such as headline, About, and skills
+- Draft and publish LinkedIn posts
+- Like, comment on, and repost feed content
+- Follow LinkedIn-specific tone and branding guidance during browser automation
 
+## Install
 
+Clone the repo into your local OpenClaw skills directory:
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+```bash
+git clone https://github.com/tylerdotai/linkedin-skill.git ~/.openclaw/skills/linkedin
+```
 
-This OpenClaw skill enables AI agents to manage LinkedIn profiles and content through browser automation. Perfect for professionals who want their AI assistants to help maintain their LinkedIn presence.
+Then restart OpenClaw so it reloads the skill registry.
 
-### Features
-
-- **Profile Management**: View and edit headline, About section, experience, and skills
-- **Content Creation**: Create and publish posts to your LinkedIn feed
-- **Engagement**: Like, comment, and share posts from your network
-- **Professional Branding**: Optimize your profile for your career goals
-- **Browser Automation**: Uses OpenClaw's browser tool for all interactions
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-Follow these steps to install and use the LinkedIn skill in your OpenClaw setup.
-
-### Prerequisites
-
-- OpenClaw with browser tool enabled
-- LinkedIn account (logged in manually via browser)
-- For posting: active LinkedIn account
-
-### Installation
-
-#### Option 1: Clone to OpenClaw Skills
-
-1. Clone this repository to your OpenClaw skills folder:
-   ```sh
-   git clone git@github.com:tylerdotai/linkedin-skill.git ~/.openclaw/skills/linkedin
-   ```
-
-2. Restart OpenClaw to load the new skill
-
-#### Option 2: Use Directly
-
-The skill is automatically available if you have browser access enabled. Just start using LinkedIn in your conversations.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-Here are some examples of how to use this skill in your OpenClaw conversations:
+Once the skill is available, prompt OpenClaw with a LinkedIn task such as:
 
-### Profile Updates
-```
-Update my LinkedIn headline to "IT Professional | AI Enthusiast"
-```
-
-```
-Add "Python" and "Automation" to my LinkedIn skills
+```text
+Update my LinkedIn headline to "Founder building AI tooling"
 ```
 
-### Content Creation
-```
-Create a post on LinkedIn about my new project launch
-```
-
-```
-Post an update about learning a new technology
+```text
+Create a LinkedIn post about shipping a new product demo
 ```
 
-### Engagement
-```
-Like and comment on the last 3 posts in my LinkedIn feed
-```
+For the full workflow guide, read `SKILL.md`.
 
-_For more examples, please refer to the [SKILL.md](./SKILL.md)_
+## Notes
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- This repo does not ship LinkedIn API integrations or standalone automation code
+- Actions depend on OpenClaw's browser tool and your authenticated LinkedIn session
+- Review generated copy before publishing
 
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Profile viewing and editing
-- [x] Post creation and publishing
-- [x] Engagement (likes, comments)
-- [ ] Add scheduled posting
-- [ ] Support LinkedIn Premium features
-- [ ] Multi-account support
-- [ ] Integration with OpenAI/Claude for post suggestions
-
-See the [open issues](https://github.com/tylerdotai/linkedin-skill/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Tyler Delano - [@tylerdotai](https://twitter.com/tylerdotai) - tyler.delano@icloud.com
-
-Project Link: [https://github.com/tylerdotai/linkedin-skill](https://github.com/tylerdotai/linkedin-skill)
-
-LinkedIn: [https://www.linkedin.com/in/tylerpdelano](https://www.linkedin.com/in/tylerpdelano)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+MIT License - see `LICENSE.txt`.
