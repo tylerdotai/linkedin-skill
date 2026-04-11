@@ -64,15 +64,16 @@ Both AM and PM
 
 ## PS_STYLE
 
-Your preferred P.S. line style for AI/builder brand posts. Give the agent examples of lines you like.
+Optional P.S. line for AI/builder brand posts. Only include if it fits the post naturally.
 
 ```
-P.S. — [Agent Name], my OpenClaw agent. Witty, self-aware, a little ironic.
+P.S. — [Agent Name], my [platform] agent. Witty, self-aware, a little ironic.
 Examples:
-- "Posted by Dexter, my OpenClaw agent. Yes, an AI posted about an AI builder meetup. 🦞"
-- "My AI co-founder Hoss wrote the first draft. I edited it. That's the workflow."
+- "Posted by [Agent Name], my AI agent. Yes, an AI posted about an AI builder meetup."
 - "This was posted by an AI and reviewed by a human. That's the point."
 ```
+
+If you prefer no P.S. line, leave this blank or tell the agent not to add one.
 
 ---
 
