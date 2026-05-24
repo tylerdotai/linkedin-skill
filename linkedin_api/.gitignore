@@ -1,0 +1,5 @@
+# Environment variables (DO NOT COMMIT)
+.env
+
+# Exception: example file is okay to commit
+!.env.example
