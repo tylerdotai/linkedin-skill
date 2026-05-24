@@ -1,12 +1,8 @@
-<p align="center">
-  <img src="images/logo.png" alt="LinkedIn Skill" width="96" />
-</p>
-
 # LinkedIn Skill for OpenClaw
 
-**An AI agent that writes and publishes LinkedIn posts in your voice — drafts for your review first, posts only when you approve.**
+**An OpenClaw agent skill that drafts LinkedIn posts, sends them to Discord for review, and publishes only when you approve.**
 
-> Built for founders, builders, and indie makers who want a consistent LinkedIn presence without the content overhead.
+> For agents, founders, and builders who want a consistent LinkedIn presence without the content overhead.
 
 [![OpenClaw](https://img.shields.io/badge/Powered%20by-OpenClaw-ff6b00?style=for-the-badge)](https://openclaw.ai)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE.txt)
@@ -17,12 +13,12 @@
 
 This skill turns an OpenClaw agent into a LinkedIn content partner that:
 
-1. **Drafts posts** in your voice — no emoji in the body, clear angle, relevant hashtags
-2. **Saves drafts to Discord** for your review before anything goes live
-3. **Publishes on approval** — you say "post it", the agent posts it
-4. **Supports AI/builder brand voice** — includes a `P.S.` pattern for posts about AI-built content (a little self-aware humor earns credibility)
+1. **Drafts posts** in your configured voice — no emoji in the body, clear angle, 2–4 hashtags
+2. **Sends drafts to Discord** for your review before anything goes live
+3. **Publishes on approval** — you say "post it", the agent navigates to LinkedIn and posts via browser automation
+4. **Supports AM/PM cadence** — AM posts for lessons and perspective, PM posts for behind-the-scenes
 
-The agent knows the difference between an AM-style "lesson/perspective" post and a PM-style "behind-the-scenes" post. You pick the angle or let it pick.
+The agent never auto-posts. Draft → Discord review → your approval → post. That is the only flow.
 
 ---
 
@@ -35,14 +31,15 @@ The agent knows the difference between an AM-style "lesson/perspective" post and
 
 ---
 
-P.S. — [Optional: for AI/builder brand posts] This was posted by [Agent Name], my AI agent that helps me ship. [witty self-aware line]
+P.S. — [Optional: for AI/builder brand posts] Posted by [Agent Name], my AI agent that helps me ship. [witty self-aware line]
 ```
 
 **Rules:**
 - No emoji in the post body
-- Specific over generic — "we replaced the hero section because users couldn't figure out what the page did in 3 seconds" beats "we improved our onboarding"
+- Specific over generic — names, numbers, concrete outcomes
 - AM posts: industry perspective, lessons, teachable moments
 - PM posts: behind-the-scenes, honest takes, the grind reality
+- 2–4 hashtags, text only
 
 ---
 
@@ -58,53 +55,50 @@ Then restart OpenClaw. The skill will appear in your agent's registry automatica
 
 ## Configure
 
-Edit the `SKILL.md` frontmatter `description` field to describe your own brand/project. Update the `CONTEXT.md` file with:
+Edit `CONTEXT.md` with your own:
 
 | What | Where | Example |
 |------|-------|---------|
-| Your name / brand | `CONTEXT.md` | `Tyler Delano / Flume SaaS Factory` |
-| Your projects | `CONTEXT.md` | `clawplex.dev, faireplay.app, ...` |
-| Your Discord webhook | Skill instructions | For review pipeline |
-| Posting cadence | `CONTEXT.md` | AM: 10am CST, PM: 6pm CST |
+| Your name / brand | `CONTEXT.md` | `Your Name / Your Brand` |
+| Your projects | `CONTEXT.md` | `project1.com, project2.com` |
+| Your Discord webhook | `CONTEXT.md` | `https://discord.com/api/webhooks/...` |
+| Posting cadence | `CONTEXT.md` | AM and PM, or just one |
+| P.S. style | `CONTEXT.md` | Optional witty self-aware footer |
 
 ---
 
 ## Workflow
 
-### Option A — Agent prompts you (daily cadence)
+### Option A — Daily cadence
 
-Set up cron jobs in OpenClaw:
+Set up cron jobs in OpenClaw for AM and PM posts. The agent gathers context (recent GitHub activity, project status), picks an angle, writes both drafts, and sends them to Discord for your review.
 
-- **AM post:** Daily ~10 AM your timezone
-- **PM post:** Daily ~6 PM your timezone
-
-The agent gathers context (recent GitHub activity, project status), picks an angle, writes both drafts, and sends them to Discord for your review.
+- **AM post:** Daily ~10am your timezone — lesson, perspective, industry take
+- **PM post:** Daily ~6pm your timezone — behind-the-scenes, grind reality
 
 ### Option B — On-demand
 
-Just tell your agent:
+Tell your agent:
 
 ```
 Write me a LinkedIn post about [thing you built / learned / have an opinion on]
 ```
 
-It will draft, save to Discord, and wait for your approval before posting.
+It will draft, send to Discord, and wait for your approval before posting.
 
 ---
 
 ## Review Pipeline
 
-Posts go to Discord first — this is the human-in-the-loop guardrail. Nothing hits LinkedIn without your explicit approval.
-
-The agent will not post without being told to. Draft → review → approve → post.
+Every post goes to Discord first. This is the human-in-the-loop guardrail. The agent will not post until you explicitly tell it to. Draft → review → approve → post.
 
 ---
 
 ## Requirements
 
 - [OpenClaw](https://openclaw.ai)
-- A LinkedIn account (the agent uses browser automation)
-- Discord webhook URL (for draft review pipeline)
+- A LinkedIn account (the agent uses browser automation to post)
+- Discord webhook URL (for the draft review pipeline)
 - Optional: cron scheduling for daily AM/PM cadence
 
 ---
@@ -114,7 +108,7 @@ The agent will not post without being told to. Draft → review → approve → 
 Edit `CONTEXT.md` with your own:
 
 - **Brand personality** — what tone fits you? (e.g., "direct, no-BS founder voice" or "thoughtful engineer")
-- **Topics to avoid** — political, controversial, etc.
+- **Topics to avoid** — political, controversial, anything you would not want your employer to see
 - **Posting preferences** — frequency, preferred angles, self-promotion vs. value-add ratio
 - **P.S. style** — optional witty self-aware footer for AI/builder brand posts
 
@@ -124,41 +118,33 @@ Edit `CONTEXT.md` with your own:
 
 **Prompt to agent:**
 ```
-Write me a LinkedIn post about our DFW Node 02 meetup in Arlington on April 15
+Write me a LinkedIn post about shipping a new feature
 ```
 
 **Agent drafts:**
 ```
-Two DFW meetups coming up — grab a laptop and come show what you're building.
+Just shipped the onboarding flow that users actually wanted.
 
-DFW Node 02 — Arlington
-April 15, 2026 · 2–3 PM CDT
-Spark Coworking · Texas Live! district
-RSVP: luma.com/yppasqmp
+Three rounds of feedback. Two rewrites. One late night that turned into a 4am "why does this keep breaking" session.
 
-DFW Node 03 — Fort Worth
-May 6, 2026 · 2–3 PM CDT
-CreateFW · Fort Worth, TX
-RSVP: luma.com/0oum4slu
+It works now. Users complete setup in under 2 minutes instead of abandoning halfway through.
 
-No agenda. No slides. Just builders with laptops showing up.
+That's the gap between "it works" and "people actually use it."
 
-#DFW #AIBUILDERS #OpenClaw #DallasFortWorth
+#IndieMakers #BuildInPublic #ProductDesign
 
 ---
 
-P.S. — This was posted by Dexter, my OpenClaw agent. Yes, an AI posted about an AI builder meetup. 🦞
+P.S. — Posted by [Agent Name], my AI agent. Yes, an AI posted about shipping. That's the workflow.
 ```
 
-**Agent sends to Discord → you review → you say "post it" → it posts.**
+**Agent sends to Discord → you review → you say "post it" → it posts via browser automation.**
 
 ---
 
 ## Related
 
 - [OpenClaw](https://openclaw.ai) — the agent platform that runs this skill
-- [ClawPlex](https://clawplex.dev) — DFW AI Builder Community (where this was born)
-- [zk-voting-system](https://github.com/tylerdotai/zk-voting-system) — another OpenClaw-powered project
 
 ---
 
